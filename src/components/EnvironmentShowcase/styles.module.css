@@ -1,0 +1,84 @@
+.container {
+  padding: var(--verl-section-padding, 4rem 0);
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+.heading {
+  text-align: center;
+  font-size: clamp(1.8rem, 1.4rem + 1vw, 2.3rem);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--verl-border-radius, 10px);
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--verl-gray-200, #e5e7eb);
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.1);
+}
+
+:global([data-theme='dark']) .card {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+:global([data-theme='dark']) .card:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.4);
+}
+
+:global([data-theme='dark']) .title {
+  color: var(--ifm-heading-color);
+}
+
+:global([data-theme='dark']) .description {
+  color: var(--ifm-font-color-secondary);
+}
+
+.imageWrapper {
+  position: relative;
+  padding-top: 40%;
+  overflow: hidden;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.imageWrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem 0.25rem;
+}
+
+.body {
+  padding: 1rem 1.1rem 1.3rem;
+}
+
+.title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.05rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.5;
+}
