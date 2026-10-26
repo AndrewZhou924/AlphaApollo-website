@@ -19,7 +19,7 @@ The earlier preview omitted the six demos, shortened the introduction, and omitt
 
 The unused `features` and `codeExamples` arrays and unused imports in `src/pages/index.tsx` are not rendered by the original homepage. In particular, illustrative `model()` / `load_data(PATH)` snippets are not promoted to runnable API examples. The actual published Quick Start remains the source of executable examples.
 
-Additional preview content consists of the overview figure, publication/citation block, paired-project navigation and workflow summaries; provenance is in `CELESTIAL-PREVIEW.md`.
+Additional preview content consists of the overview figure, publication/citation block, paired-project navigation; provenance is in `CELESTIAL-PREVIEW.md`.
 
 ## Typography and references
 
@@ -31,3 +31,5 @@ Additional preview content consists of the overview figure, publication/citation
 - Distill (https://distill.pub/): editorial hierarchy, not a copied paper-page template.
 
 The font pairing, red/blue colors and earlier slogan were our own design choices, not requirements or assets copied from those references.
+
+The subsequent copy pass removes non-source slogans and repeated explanatory UI copy. The original-content coverage above remains unchanged.

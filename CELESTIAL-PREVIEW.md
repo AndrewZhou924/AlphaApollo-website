@@ -35,7 +35,7 @@ The Diana content is a versioned preview snapshot. Before production adoption, m
 ## Interactions
 
 1. Switch between the Apollo and Diana previews.
-2. Select a framework component to change its description, process steps and original figure.
+2. Select a framework component to change its description and original figure.
 3. Open original figures in a native dialog; Escape closes it and restores focus.
 4. Choose workflow code examples and copy the displayed code.
 5. Expand installation prerequisites, authors and BibTeX; copy citations.
@@ -61,3 +61,7 @@ Validation on 26 October 2026: TypeScript and production build passed; all copie
 ## Content-complete typography revision
 
 See `CONTENT-COVERAGE.md` for a section-by-section comparison with the existing rendered Apollo homepage. This revision restores the full introduction, six original demo prompts/recordings and contact footer. Recordings load only after an explicit Play action. Original feature descriptions, figures, links, installation and three workflow command blocks are preserved. Hero slogans and repeated uppercase labels have been removed. Newsreader headings and Manrope body text are self-hosted with their OFL licenses under `static/fonts/`; main paragraphs are larger, darker and heavier.
+
+## Copy reduction
+
+Removed the invented hero summary from both previews, repeated paper metadata in the hero, component-selection instructions, extra step strips, demo introductory copy, generic publication summaries and the repeated footer project summary. Section titles now use direct labels such as Overview, Demo and Paper and citation. These additions were not requirements of the reference sites. Original homepage text, demo prompts, commands, contact information, useful figure captions and Diana onboarding conditions are retained. Source-coverage checks still pass.
