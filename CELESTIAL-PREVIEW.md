@@ -57,3 +57,7 @@ npm run serve -- --port 18767
 Open `/solar-preview` and `/lunar-preview`. This branch does not alter the default homepage, merge to main or deploy production.
 
 Validation on 26 October 2026: TypeScript and production build passed; all copied Diana images match their source bytes and Apollo workflow commands match the existing Quick Start. Browser checks covered component switching, figure enlargement/Escape, code switching/copying, separate Diana content, and 320/390 px narrow-screen layouts. No new model experiments were performed.
+
+## Content-complete typography revision
+
+See `CONTENT-COVERAGE.md` for a section-by-section comparison with the existing rendered Apollo homepage. This revision restores the full introduction, six original demo prompts/recordings and contact footer. Recordings load only after an explicit Play action. Original feature descriptions, figures, links, installation and three workflow command blocks are preserved. Hero slogans and repeated uppercase labels have been removed. Newsreader headings and Manrope body text are self-hosted with their OFL licenses under `static/fonts/`; main paragraphs are larger, darker and heavier.

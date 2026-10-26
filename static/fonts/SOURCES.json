@@ -1,0 +1,14 @@
+[
+  {
+    "family": "manrope",
+    "source": "https://github.com/google/fonts/tree/main/ofl/manrope",
+    "license": "manrope-OFL.txt",
+    "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+  },
+  {
+    "family": "newsreader",
+    "source": "https://github.com/google/fonts/tree/main/ofl/newsreader",
+    "license": "newsreader-OFL.txt",
+    "sha256": "8a08d13f8a6c0d51be379a60af84f945f65369a67e509ee3c3bdcc421254d7c1"
+  }
+]

@@ -1,8 +1,8 @@
 // Content snapshots for review-only twin routes. See CELESTIAL-PREVIEW.md for provenance.
 export interface ProjectContent {
-  id: 'apollo' | 'diana'; name: string; subtitle: string; eyebrow: string; deck: string;
+  id: 'apollo' | 'diana'; name: string; subtitle: string; deck: string;
   paper: string; paperNote: string; code: string; docs: string;
-  frameworkTitle: string; intro: string; overview: string; overviewCaption: string; exploreTitle: string;
+  frameworkTitle: string; intro: string; demos?: {label: string; text: string; gif: string}[]; overview: string; overviewCaption: string; exploreTitle: string;
   stages: {short: string; title: string; kicker: string; description: string; flow: string[]; image: string; caption: string; link: string}[];
   startTitle: string; startDescription: string; startDocs: string;
   setup: {title: string; code: string}[]; examples: {title: string; language: string; code: string}[];
@@ -13,14 +13,13 @@ export const apollo: ProjectContent = {
   "id": "apollo",
   "name": "AlphaApollo",
   "subtitle": "A System for Deep Agentic Reasoning",
-  "eyebrow": "MODELS × TOOLS × ITERATION",
   "deck": "Multi-turn agentic reasoning, multi-turn agentic learning, and multi-round agentic evolution.",
   "paper": "https://arxiv.org/abs/2510.06261",
   "paperNote": "arXiv:2510.06261v2 · March 2026",
   "code": "https://github.com/tmlr-group/AlphaApollo",
   "docs": "/docs/intro",
   "frameworkTitle": "An integrated agentic system",
-  "intro": "AlphaApollo is an agentic reasoning framework that integrates multiple models and tools to enable iterative, verifiable, and self-evolving reasoning. It supports tool-integrated reasoning, agentic post-training, and agentic self-evolution.",
+  "intro": "AlphaApollo is an agentic reasoning framework that integrates multiple models and tools to enable iterative, verifiable, and self-evolving reasoning. It supports a wide range of agentic reasoning paradigms, including tool-integrated reasoning, agentic post-training (multi-turn SFT and reinforcement learning), and agentic self-evolution. AlphaApollo incorporates multiple post-training algorithms such as PPO, GRPO, and DAPO, and provides dataset-backed agentic evaluation pipelines. AlphaApollo also offers flexible and extensible agentic environments and tool-set configurations, allowing users to easily customize, extend, and scale agentic reasoning workflows.",
   "overview": "/img/framework-v2-alphaapollo-compressed.png",
   "overviewCaption": "AlphaApollo framework: professional tools and multiple model participants support iterative solution refinement. Original figure from the existing project website.",
   "exploreTitle": "Reasoning, learning, and evolution",
@@ -29,7 +28,7 @@ export const apollo: ProjectContent = {
       "short": "Reasoning",
       "title": "Multi-turn agentic reasoning",
       "kicker": "MODEL ↔ ENVIRONMENT",
-      "description": "An iterative cycle of model reasoning, tool execution, and environment feedback. Each turn contributes to the context for the next.",
+      "description": "Multi-turn agentic reasoning through an iterative cycle of model reasoning, tool execution, and environment feedback.",
       "flow": [
         "Reason",
         "Execute tools",
@@ -57,7 +56,7 @@ export const apollo: ProjectContent = {
       "short": "Evolution",
       "title": "Multi-round agentic evolution",
       "kicker": "PROPOSE → JUDGE → UPDATE",
-      "description": "Multi-round agentic evolution through a propose–judge–update loop with tool-assisted verification and long-term memory.",
+      "description": "Multi-round agentic evolution through a propose-judge-update evolutionary loop with long-term memory.",
       "flow": [
         "Propose solutions",
         "Verify with tools",
@@ -68,7 +67,39 @@ export const apollo: ProjectContent = {
       "link": "/multi-round-agentic-evolution"
     }
   ],
-  "startTitle": "Choose your next experiment.",
+  "demos": [
+  {
+    "label": "Question 1",
+    "text": "Every morning Aya goes for a 9-kilometer-long walk and stops at a coffee shop afterwards. When she walks at a constant speed of $s$ kilometers per hour, the walk takes her 4 hours, including $t$ minutes spent in the coffee shop. When she walks $s+2$ kilometers per hour, the walk takes her 2 hours and 24 minutes, including $t$ minutes spent in the coffee shop. Suppose Aya walks at $s+\\frac{1}{2}$ kilometers per hour. Find the number of minutes the walk takes her, including the $t$ minutes spent in the coffee shop.",
+    "gif": "/img/demo_q1.gif"
+  },
+  {
+    "label": "Question 2",
+    "text": "Jen enters a lottery by picking 4 distinct numbers from $S=\\{1, 2, 3, \\dots, 9, 10\\}$. 4 numbers are randomly chosen from $S$. She wins a prize if at least two of her numbers were of the randomly chosen numbers, and wins the grand prize if all four of her numbers were the randomly chosen numbers. The probability of her winning the grand prize given that she won a prize is $m/n$, where $m$ and $n$ are relatively prime positive integers. Find $m+n$.",
+    "gif": "/img/demo_q2.gif"
+  },
+  {
+    "label": "Question 3",
+    "text": "Find the largest possible real part of $(75+117i)z+\\frac{96+144i}{z}$ where $z$ is a complex number with $|z|=4$.",
+    "gif": "/img/demo_q3.gif"
+  },
+  {
+    "label": "Followup 1",
+    "text": "Could you write a short Python script using SymPy to solve the system of equations for $s$ and $t$, and then calculate the final answer in minutes?",
+    "gif": "/img/demo_f1.gif"
+  },
+  {
+    "label": "Followup 2",
+    "text": "Could you write a Python script to simulate this lottery 100,000 times and verify if the empirical probability closely matches your analytical result?",
+    "gif": "/img/demo_f2.gif"
+  },
+  {
+    "label": "Followup 3",
+    "text": "Please write a Python program using `scipy.optimize` or a simple search over $\\theta \\in [0, 2\\pi]$ to numerically find the maximum real part of this expression and verify your analytical maximum.",
+    "gif": "/img/demo_f3.gif"
+  }
+],
+  "startTitle": "Quick start",
   "startDescription": "Explore the workflow examples from the current Apollo website. Prepare the environment and model services before running the commands.",
   "startDocs": "/docs/getting-started/installation",
   "setup": [
@@ -105,7 +136,6 @@ export const diana: ProjectContent = {
   "id": "diana",
   "name": "AlphaDiana",
   "subtitle": "A Measurement System for Agents in Verifiable Reasoning Tasks",
-  "eyebrow": "AGENTS × EVIDENCE × MEASUREMENT",
   "deck": "Compare scores and traces on verifiable reasoning tasks. Test tools, skills and memory.",
   "paper": "https://arxiv.org/abs/2610.20675",
   "paperNote": "arXiv:2610.20675v1 · October 2026",
