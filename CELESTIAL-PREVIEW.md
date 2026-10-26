@@ -1,14 +1,14 @@
-# Sun & Moon: paired website preview
+# Shared research website preview
 
 Review branch: `design/solar-lunar-preview`. The current homepage and Docs are unchanged.
 
 ## Preview routes
 
-- `/solar-preview`: Apollo content, warm red accents and a solar motif.
-- `/lunar-preview`: Diana content, blue accents and a lunar motif.
+- `/solar-preview`: Apollo content with restrained red accents.
+- `/lunar-preview`: Diana content with restrained blue accents.
 - `/`: existing Apollo homepage for comparison.
 
-Both preview routes render the same `src/components/Celestial` component. Project content lives in `src/data/celestial.ts`; colors are CSS variables selected by `data-project`. The small sun/moon marks are proposed UI motifs for this design study, not replacement official logos. No research figure is redrawn.
+Both preview routes render the same `src/components/Celestial` component. Project content lives in `src/data/celestial.ts`; colors are CSS variables selected by `data-project`. The revision uses text wordmarks and original research figures; decorative spheres, orbital graphics and proposed sun/moon marks have been removed. No research figure is redrawn. Route names are retained so existing preview links keep working.
 
 ## Template shortlist
 
@@ -20,7 +20,7 @@ Inspected 26 October 2026. These are references, not vendored source templates.
 | [Academic Project Page / Nerfies family](https://github.com/eliahuhorwitz/Academic-project-page-template) | Clear paper title, resource buttons, media and citation | Strong paper-page foundation; less suited to a project with extensive Docs without adaptation |
 | [Academic Project Astro](https://github.com/RomanHauksson/academic-project-astro-template) | MDX content and interactive figure/tab components | Attractive for a standalone paper page, but migration would add work and duplicate the current Docs stack |
 
-The preview uses an independently implemented editorial layout: resource links, overview, interactive component explorer, workflow code, paper/citation and companion project. It combines the narrative patterns above with a shared sun/moon visual identity. No third-party HTML, CSS, fonts or template assets are copied, and there is no framework migration.
+The preview uses an independently implemented editorial layout: resource links, overview, interactive component explorer, workflow code, paper/citation and companion project. It uses the title/resource hierarchy of [Nerfies](https://nerfies.github.io/), the figure-led presentation of [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), and the restrained typography of [Distill](https://distill.pub/). Red and blue accents distinguish the projects without decorative celestial graphics. Links use plain labels; figure controls explicitly say “Enlarge figure.” No third-party HTML, CSS, fonts or template assets are copied, and there is no framework migration.
 
 ## Content provenance
 
@@ -34,7 +34,7 @@ The Diana content is a versioned preview snapshot. Before production adoption, m
 
 ## Interactions
 
-1. Switch between the paired sun and moon pages.
+1. Switch between the Apollo and Diana previews.
 2. Select a framework component to change its description, process steps and original figure.
 3. Open original figures in a native dialog; Escape closes it and restores focus.
 4. Choose workflow code examples and copy the displayed code.

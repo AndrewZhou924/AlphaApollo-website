@@ -1,7 +1,7 @@
 // Content snapshots for review-only twin routes. See CELESTIAL-PREVIEW.md for provenance.
 export interface ProjectContent {
   id: 'apollo' | 'diana'; name: string; subtitle: string; eyebrow: string; deck: string;
-  paper: string; paperNote: string; code: string; docs: string; orbitLabel: string;
+  paper: string; paperNote: string; code: string; docs: string;
   frameworkTitle: string; intro: string; overview: string; overviewCaption: string; exploreTitle: string;
   stages: {short: string; title: string; kicker: string; description: string; flow: string[]; image: string; caption: string; link: string}[];
   startTitle: string; startDescription: string; startDocs: string;
@@ -19,12 +19,11 @@ export const apollo: ProjectContent = {
   "paperNote": "arXiv:2510.06261v2 · March 2026",
   "code": "https://github.com/tmlr-group/AlphaApollo",
   "docs": "/docs/intro",
-  "orbitLabel": "The art of iteration.",
-  "frameworkTitle": "Models and tools.\nWorking together.",
+  "frameworkTitle": "An integrated agentic system",
   "intro": "AlphaApollo is an agentic reasoning framework that integrates multiple models and tools to enable iterative, verifiable, and self-evolving reasoning. It supports tool-integrated reasoning, agentic post-training, and agentic self-evolution.",
   "overview": "/img/framework-v2-alphaapollo-compressed.png",
   "overviewCaption": "AlphaApollo framework: professional tools and multiple model participants support iterative solution refinement. Original figure from the existing project website.",
-  "exploreTitle": "Three ways to go deeper.",
+  "exploreTitle": "Reasoning, learning, and evolution",
   "stages": [
     {
       "short": "Reasoning",
@@ -99,7 +98,7 @@ export const apollo: ProjectContent = {
   "researchDescription": "The technical report studies reasoning, learning, and evolution across math reasoning benchmarks. Read the paper for the experimental settings, results, and limitations.",
   "authors": "Zhanke Zhou · Chentao Cao · Xiao Feng · Xuan Li · Zongze Li · Xiangyu Lu · Jiangchao Yao · Weikai Huang · Tian Cheng · Jianghangfan Zhang · Tangyu Jiang · Linrui Xu · Yiming Zheng · Brando Miranda · Tongliang Liu · Sanmi Koyejo · Masashi Sugiyama · Bo Han",
   "citation": "@misc{zhou2026alphaapollo,\n  title={AlphaApollo: A System for Deep Agentic Reasoning},\n  author={Zhanke Zhou and Chentao Cao and Xiao Feng and Xuan Li and Zongze Li and Xiangyu Lu and Jiangchao Yao and Weikai Huang and Tian Cheng and Jianghangfan Zhang and Tangyu Jiang and Linrui Xu and Yiming Zheng and Brando Miranda and Tongliang Liu and Sanmi Koyejo and Masashi Sugiyama and Bo Han},\n  year={2026},\n  eprint={2510.06261},\n  archivePrefix={arXiv},\n  primaryClass={cs.AI},\n  url={https://arxiv.org/abs/2510.06261}\n}",
-  "relatedDescription": "AlphaApollo develops agentic reasoning systems. AlphaDiana measures agents on verifiable reasoning tasks. Two projects, a shared visual language."
+  "relatedDescription": "AlphaApollo develops agentic reasoning systems. AlphaDiana measures agents on verifiable reasoning tasks."
 };
 
 export const diana: ProjectContent = {
@@ -112,12 +111,11 @@ export const diana: ProjectContent = {
   "paperNote": "arXiv:2610.20675v1 · October 2026",
   "code": "https://github.com/AndrewZhou924/AlphaDiana-dev",
   "docs": "https://alphadiana.org/docs/intro",
-  "orbitLabel": "The science of observation.",
   "frameworkTitle": "Look beyond the final answer.",
   "intro": "A harness controls how a model uses prompts, tools and persistent state. AlphaDiana runs agents on benchmarks, scores their answers and saves execution evidence for later analysis.",
   "overview": "/img/twin/position.png",
   "overviewCaption": "Figure 1. Position of AlphaDiana: from stateless model evaluation to harness-aware agent measurement. Original paper figure.",
-  "exploreTitle": "Measure. Inspect. Understand.",
+  "exploreTitle": "Compare, inspect, and intervene",
   "stages": [
     {
       "short": "Compare",
@@ -195,5 +193,5 @@ export const diana: ProjectContent = {
   "researchDescription": "The paper connects correctness with execution traces, component interventions and resource measurements. Harness effects depend on the model and task; inspect the settings and evidence coverage alongside the scores.",
   "authors": "Zhanke Zhou · Zongze Li · Weikai Huang · Xuan Li · Chentao Cao · Xiao Feng · Xiangyu Lu · Jinbo Hu · Yi Xie · Nico Pelleriti · Shiyang Liu · Menghan Lu · Max Zimmer · Brando Miranda · Jiangchao Yao · Bo Liu · Sanmi Koyejo · Sebastian Pokutta · Bo Han",
   "citation": "@article{zhou2026alphadiana,\n  title = {{AlphaDiana}: A Measurement System for Agents in Verifiable Reasoning Tasks},\n  author={Zhanke Zhou and Zongze Li and Weikai Huang and Xuan Li and Chentao Cao and Xiao Feng and Xiangyu Lu and Jinbo Hu and Yi Xie and Nico Pelleriti and Shiyang Liu and Menghan Lu and Max Zimmer and Brando Miranda and Jiangchao Yao and Bo Liu and Sanmi Koyejo and Sebastian Pokutta and Bo Han},\n  journal = {arXiv preprint arXiv:2610.20675},\n  year = {2026}\n}",
-  "relatedDescription": "AlphaDiana measures agents on verifiable reasoning tasks. AlphaApollo develops agentic reasoning systems. Two projects, a shared visual language."
+  "relatedDescription": "AlphaDiana measures agents on verifiable reasoning tasks. AlphaApollo develops agentic reasoning systems."
 };
