@@ -1,0 +1,23 @@
+[
+  {
+    "file": "position.png",
+    "source_repository": "https://github.com/AndrewZhou924/AlphaDiana-website",
+    "source_commit": "ea7999461b20dc2844f1c812976e48afa9da6ebf",
+    "source_path": "static/img/paper/position.png",
+    "sha256": "21705e6775a45226e3b60062c9cba66729cd87f45c75e3f825078b79c332c3f9"
+  },
+  {
+    "file": "system.png",
+    "source_repository": "https://github.com/AndrewZhou924/AlphaDiana-website",
+    "source_commit": "ea7999461b20dc2844f1c812976e48afa9da6ebf",
+    "source_path": "static/img/paper/system.png",
+    "sha256": "c4d71ac1197448fc33357d1fc9a9d07541e480819c483e149bf61b1836a5ca8f"
+  },
+  {
+    "file": "alphadiana-overview.png",
+    "source_repository": "https://github.com/AndrewZhou924/AlphaDiana-website",
+    "source_commit": "ea7999461b20dc2844f1c812976e48afa9da6ebf",
+    "source_path": "static/img/readme/alphadiana-overview.png",
+    "sha256": "f795886e747e145500a1aa674b9b076584af667c5f74c2b74dd423a9406f63f8"
+  }
+]
